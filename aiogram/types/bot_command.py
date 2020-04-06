@@ -12,4 +12,4 @@ class BotCommand(base.TelegramObject):
     description: base.String = fields.Field()
 
     def __init__(self, command: base.String, description: base.String):
-        super(BotCommand, self).__init__(command=command, description=description)
+        super().__init__(command=command, description=description)
